@@ -45,8 +45,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // YourView.setBackgroundColor(Color.argb(255, 255, 0, 0));
-                num += 1;
-                numberText.setText("You pressed the color button "+num+" times");
                 System.out.println("Hello mom");
                 Log.i("testButton", "Hi dad! "+responseText.getText().toString());
                 YourView.setBackgroundColor(Color.parseColor(colorText.getText().toString()));
@@ -59,6 +57,8 @@ public class MainActivity extends AppCompatActivity {
         randomButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                num += 1;
+                numberText.setText("You pressed the random color button "+num+" times");
                 int randidx = (int)(Math.random()*20);
                 YourView.setBackgroundColor(Color.parseColor(colors[randidx]));
                 randomText.setText("Current random color: " + colors[randidx]);

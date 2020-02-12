@@ -51,6 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/name_hint"
+        android:gravity="center_horizontal"
         />
 
     <EditText
@@ -61,6 +62,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/color_hint"
+        android:gravity="center_horizontal"
         />
 
     <Button
